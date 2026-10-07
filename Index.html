@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AP Saim Bakery Shop | Premium Bakery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- ================= PRELOADER ================= -->
+
+<div id="preloader">
+    <div class="loader-logo">AP SAIM</div>
+    <div class="loader-line"></div>
+    <p>Freshness is coming...</p>
+</div>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a href="#home" class="logo">
+        <span>AP</span>
+        <div>
+            <strong>SAIM</strong>
+            <small>BAKERY SHOP</small>
+        </div>
+    </a>
+
+    <nav id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#products">Cakes</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+
+        <button id="searchBtn" title="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button id="cartBtn" class="cart-button">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span id="cartCount">0</span>
+        </button>
+
+        <button id="menuBtn" class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+</header>
+
+
+<!-- ================= SEARCH BOX ================= -->
+
+<div class="search-panel" id="searchPanel">
+
+    <div class="search-inner">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search cakes, pastries, donuts..."
+        >
+
+        <button id="closeSearch">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="eyebrow">
+            PREMIUM BAKERY • FRESH EVERY DAY
+        </p>
+
+        <h1>
+            Baked With
+            <span>Love.</span>
+        </h1>
+
+        <p class="hero-text">
+            Delicious cakes, pastries and sweet creations
+            freshly prepared for your special moments.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#products" class="gold-btn">
+                Explore Cakes
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#custom" class="outline-btn">
+                Custom Cake
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div>
+                <strong>100+</strong>
+                <span>Fresh Products</span>
+            </div>
+
+            <div>
+                <strong>4.9★</strong>
+                <span>Customer Rating</span>
+            </div>
+
+            <div>
+                <strong>100%</strong>
+                <span>Fresh Ingredients</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories section" id="categories">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">OUR MENU</p>
+
+        <h2>
+            Something For
+            <span>Everyone</span>
+        </h2>
+
+        <p>
+            Choose your favourite bakery treat.
+        </p>
+
+    </div>
+
+
+    <div class="category-grid">
+
+        <button class="category-card active" data-category="all">
+            <div class="category-icon">
+                <i class="fa-solid fa-layer-group"></i>
+            </div>
+            <h3>All</h3>
+            <span>Everything</span>
+        </button>
+
+        <button class="category-card" data-category="cakes">
+            <div class="category-icon">
+                <i class="fa-solid fa-cake-candles"></i>
+            </div>
+            <h3>Cakes</h3>
+            <span>Birthday & More</span>
+        </button>
+
+        <button class="category-card" data-category="cupcakes">
+            <div class="category-icon">
+                <i class="fa-solid fa-cookie"></i>
+            </div>
+            <h3>Cupcakes</h3>
+            <span>Mini Delights</span>
+        </button>
+
+        <button class="category-card" data-category="pastries">
+            <div class="category-icon">
+                <i class="fa-solid fa-bread-slice"></i>
+            </div>
+            <h3>Pastries</h3>
+            <span>Freshly Baked</span>
+        </button>
+
+        <button class="category-card" data-category="donuts">
+            <div class="category-icon">
+                <i class="fa-solid fa-circle-dot"></i>
+            </div>
+            <h3>Donuts</h3>
+            <span>Sweet & Soft</span>
+        </button>
+
+        <button class="category-card" data-category="cookies">
+            <div class="category-icon">
+                <i class="fa-solid fa-cookie-bite"></i>
+            </div>
+            <h3>Cookies</h3>
+            <span>Crispy Bites</span>
+        </button>
+
+        <button class="category-card" data-category="bread">
+            <div class="category-icon">
+                <i class="fa-solid fa-wheat-awn"></i>
+            </div>
+            <h3>Breads</h3>
+            <span>Daily Fresh</span>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= OFFER ================= -->
+
+<section class="offer-section">
+
+    <div class="offer-image"></div>
+
+    <div class="offer-content">
+
+        <p class="eyebrow">TODAY'S SPECIAL</p>
+
+        <h2>
+            Sweet Moments
+            <span>Deserve More.</span>
+        </h2>
+
+        <p>
+            Get a special discount on selected premium cakes.
+            Perfect for birthdays, anniversaries and celebrations.
+        </p>
+
+        <div class="discount">
+            <strong>20%</strong>
+            <span>OFF</span>
+        </div>
+
+        <a href="#products" class="gold-btn">
+            Shop Offer
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products section" id="products">
+
+    <div class="section-heading">
+
+        <p class="eyebrow">OUR COLLECTION</p>
+
+        <h2>
+            Best Selling
+            <span>Bakery Items</span>
+        </h2>
+
+        <p>
+            Freshly baked. Beautifully decorated. Made for you.
+        </p>
+
+    </div>
+
+
+    <div class="product-toolbar">
+
+        <div class="filter-buttons">
+
+            <button class="filter active" data-category="all">
+                All
+            </button>
+
+            <button class="filter" data-category="cakes">
+                Cakes
+            </button>
+
+            <button class="filter" data-category="cupcakes">
+                Cupcakes
+            </button>
+
+            <button class="filter" data-category="pastries">
+                Pastries
+            </button>
+
+            <button class="filter" data-category="donuts">
+                Donuts
+            </button>
+
+            <button class="filter" data-category="cookies">
+                Cookies
+            </button>
+
+            <button class="filter" data-category="bread">
+                Bread
+            </button>
+
+        </div>
+
+        <select id="sortProducts">
+
+            <option value="default">
+                Sort By
+            </option>
+
+            <option value="low">
+                Price: Low to High
+            </option>
+
+            <option value="high">
+                Price: High to Low
+            </option>
+
+            <option value="rating">
+                Top Rated
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div class="product-grid" id="productGrid">
+
+
+        <!-- PRODUCT 1 -->
+
+        <article class="product-card"
+                 data-category="cakes"
+                 data-price="3500"
+                 data-rating="4.9">
+
+            <div class="product-image">
+
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85"
+                     alt="Chocolate Cake">
+
+                <span class="badge">
+                    BEST SELLER
+                </span>
+
+                <button class="quick-view">
+                    <i class="fa-solid fa-eye"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <div class="rating">
+                    ★★★★★
+                    <small>4.9</small>
+                </div>
+
+                <h3>Classic Chocolate Cake</h3>
+
+                <p>
+                    Rich chocolate sponge with creamy chocolate frosting.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        Rs. 3,500
+                    </strong>
+
+                    <button class="add-cart"
+                            data-name="Classic Chocolate Cake"
+                            data-price="3500"
+                            data-image="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 2 -->
+
+        <article class="product-card"
+                 data-category="cakes"
+                 data-price="4200"
+                 data-rating="5">
+
+            <div class="product-image">
+
+                <img src="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=85"
+                     alt="Red Velvet Cake">
+
+                <span class="badge pink">
+                    POPULAR
+                </span>
+
+                <button class="quick-view">
+                    <i class="fa-solid fa-eye"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <div class="rating">
+                    ★★★★★
+                    <small>5.0</small>
+                </div>
+
+                <h3>Red Velvet Dream</h3>
+
+                <p>
+                    Soft red velvet layers with silky cream cheese frosting.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        Rs. 4,200
+                    </strong>
+
+                    <button class="add-cart"
+                            data-name="Red Velvet Dream"
+                            data-price="4200"
+                            data-image="https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=85">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 3 -->
+
+        <article class="product-card"
+                 data-category="cakes"
+                 data-price="5000"
+                 data-rating="4.9">
+
+            <div class="product-image">
+
+                <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=85"
+                     alt="Birthday Cake">
+
+                <span class="badge">
+                    NEW
+                </span>
+
+                <button class="quick-view">
+                    <i class="fa-solid fa-eye"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <div class="rating">
+                    ★★★★★
+                    <small>4.9</small>
+                </div>
+
+                <h3>Celebration Cake</h3>
+
+                <p>
+                    Elegant celebration cake decorated with fresh berries.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        Rs. 5,000
+                    </strong>
+
+                    <button class="add-cart"
+                            data-name="Celebration Cake"
+                            data-price="5000"
+                            data-image="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=85">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 4 -->
+
+        <article class="product-card"
+                 data-category="cupcakes"
+                 data-price="1500"
+                 data-rating="4.8">
+
+            <div class="product-image">
+
+                <img src="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=900&q=85"
+                     alt="Cupcakes">
+
+                <button class="quick-view">
+                    <i class="fa-solid fa-eye"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <div class="rating">
+                    ★★★★★
+                    <small>4.8</small>
+                </div>
+
+                <h3>Luxury Cupcake Box</h3>
+
+                <p>
+                    Six delicious cupcakes with premium frosting.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        Rs. 1,500
+                    </strong>
+
+                    <button class="add-cart"
+                            data-name="Luxury Cupcake Box"
+                            data-price="1500"
+                            data-image="https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=900&q=85">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 5 -->
+
+        <article class="product-card"
+                 data-category="pastries"
+                 data-price="450"
+                 data-rating="4.7">
+
+            <div class="product-image">
+
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85"
+                     alt="Pastry">
+
+                <button class="quick-view">
+                    <i class="fa-solid fa-eye"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <div class="rating">
+                    ★★★★★
+                    <small>4.7</small>
+                </div>
+
+                <h3>Butter Croissant</h3>
+
+                <p>
+                    Golden, flaky and buttery French-style croissant.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        Rs. 450
+                    </strong>
+
+                    <button class="add-cart"
+                            data-name="Butter Croissant"
+                            data-price="450"
+                            data-image="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 6 -->
+
+        <article class="product-card"
+                 data-category="donuts"
+                 data-price="250"
+                 data-rating="4.8">
+
+            <div class="product-image">
+
+                <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85"
+                     alt="Donuts">
+
+                <button class="quick-view">
+                    <i class="fa-solid fa-eye"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <div class="rating">
+                    ★★★★★
+                    <small>4.8</small>
+                </div>
+
+                <h3>Chocolate Donut</h3>
+
+                <p>
+                    Soft donut covered with rich chocolate glaze.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        Rs. 250
+                    </strong>
+
+                    <button class="add-cart"
+                            data-name="Chocolate Donut"
+                            data-price="250"
+                            data-image="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=85">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 7 -->
+
+        <article class="product-card"
+                 data-category="cookies"
+                 data-price="700"
+                 data-rating="4.6">
+
+            <div class="product-image">
+
+                <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=900&q=85"
+                     alt="Cookies">
+
+                <button class="quick-view">
+                    <i class="fa-solid fa-eye"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <div class="rating">
+                    ★★★★★
+                    <small>4.6</small>
+                </div>
+
+                <h3>Chocolate Chip Cookies</h3>
+
+                <p>
+                    Freshly baked cookies packed with chocolate chips.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        Rs. 700
+                    </strong>
+
+                    <button class="add-cart"
+                            data-name="Chocolate Chip Cookies"
+                            data-price="700"
+                            data-image="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=900&q=85">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- PRODUCT 8 -->
+
+        <article class="product-card"
+                 data-category="bread"
+                 data-price="500"
+                 data-rating="4.7">
+
+            <div class="product-image">
+
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85"
+                     alt="Fresh Bread">
+
+                <button class="quick-view">
+                    <i class="fa-solid fa-eye"></i>
+                </button>
+
+            </div>
+
+            <div class="product-info">
+
+                <div class="rating">
+                    ★★★★★
+                    <small>4.7</small>
+                </div>
+
+                <h3>Fresh Artisan Bread</h3>
+
+                <p>
+                    Freshly baked artisan bread with a crispy crust.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        Rs. 500
+                    </strong>
+
+                    <button class="add-cart"
+                            data-name="Fresh Artisan Bread"
+                            data-price="500"
+                            data-image="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=85">
+
+                        <i class="fa-solid fa-plus"></i>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CUSTOM CAKE ================= -->
+
+<section class="custom section" id="custom">
+
+    <div class="custom-content">
+
+        <p class="eyebrow">
+            YOUR IDEA • OUR CREATION
+        </p>
+
+        <h2>
+            Make Your
+          
